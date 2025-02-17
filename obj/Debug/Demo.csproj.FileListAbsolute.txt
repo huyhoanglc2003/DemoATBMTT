@@ -1,0 +1,10 @@
+D:\Project Demo\Other Project\ATBM\DemoATBMTT\bin\Debug\Demo.exe.config
+D:\Project Demo\Other Project\ATBM\DemoATBMTT\bin\Debug\Demo.exe
+D:\Project Demo\Other Project\ATBM\DemoATBMTT\bin\Debug\Demo.pdb
+D:\Project Demo\Other Project\ATBM\DemoATBMTT\obj\Debug\Demo.csproj.AssemblyReference.cache
+D:\Project Demo\Other Project\ATBM\DemoATBMTT\obj\Debug\Demo.Form1.resources
+D:\Project Demo\Other Project\ATBM\DemoATBMTT\obj\Debug\Demo.Properties.Resources.resources
+D:\Project Demo\Other Project\ATBM\DemoATBMTT\obj\Debug\Demo.csproj.GenerateResource.cache
+D:\Project Demo\Other Project\ATBM\DemoATBMTT\obj\Debug\Demo.csproj.CoreCompileInputs.cache
+D:\Project Demo\Other Project\ATBM\DemoATBMTT\obj\Debug\Demo.exe
+D:\Project Demo\Other Project\ATBM\DemoATBMTT\obj\Debug\Demo.pdb

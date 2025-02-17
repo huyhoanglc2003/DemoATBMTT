@@ -9,7 +9,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestECC
+namespace Demo
 {
     public abstract class Key
     {
@@ -62,6 +62,25 @@ namespace TestECC
         public override string ToString()
         {
             return point.ToString();
+        }
+    }
+
+
+    public class PublicMessage
+    {
+        public string Message { get; set; }
+        public int a { get; }
+        public int b { get; }
+        public int p { get; }
+
+        public PublicMessage(int a, int b , int p, string Message)
+        {
+            
+        }
+
+        public override string ToString()
+        {
+            return "{" + a + ";" + b + ";" + p + ";"+ Message +" }";
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Net.Mime.MediaTypeNames;
@@ -10,18 +11,22 @@ namespace Demo
 {
     public class ECC
     {                   
-        private const int a = 1;
-        private const int b = 6;
-        private static int p = 9973;
-
-        private static EllipticCurve curve = new EllipticCurve(a,b,p);
-
-        private static Point alpha = Generator.GenerateCurveGPoint(curve);
-        private static PrivateKey privateKey = new PrivateKey(5);
-        private PublicKey publicKey = new PublicKey(curve.MultiplyPoint(alpha, privateKey.KeyValue));
+        private EllipticCurve curve;
+        private Point basePoint;
+        public PublicKey publicKey { get; }
         private byte r_Multiply = 3;
 
+        public ECC(EllipticCurve curve, PrivateKey privateKey)
+        {
+            this.curve = curve;
+            this.basePoint = Generator.GenerateCurveGPoint(curve);
+            this.publicKey = new PublicKey(curve.MultiplyPoint(basePoint, privateKey.KeyValue));
+        }
 
+        public ECC(PublicMessage publicMessage)
+        {
+
+        }
 
         /// <summary>
         /// Hàm mã hóa bản rõ
@@ -31,36 +36,28 @@ namespace Demo
         public string ECCEncoding(string plainText)
         {
             Console.WriteLine("=======================ENCODING==============================");
-
-
             Point[] pointEncode = PointConverter.IntToPoint(PointConverter.StringToInt(StandardizeMessage(plainText)));
-
             foreach (var item in pointEncode)
             {
                 Console.WriteLine("Point" + item);
             }
-
-
             CipherPoint[] cipherPoints = new CipherPoint[pointEncode.Length];
 
             for (int i = 0; i < pointEncode.Length; i++)
             {
                 cipherPoints[i] = ECCEncoding(pointEncode[i]);
             }
-
             foreach (var item in cipherPoints)
             {
                 Console.WriteLine("Cipherpoint"+item);
             }
-
             string cipherText = PointConverter.IntToString(PointConverter.CipherToInt(cipherPoints));
-
             return cipherText;
         }
 
         public CipherPoint ECCEncoding(Point message)
         {
-            Point y1 = curve.MultiplyPoint(alpha, r_Multiply);
+            Point y1 = curve.MultiplyPoint(basePoint, r_Multiply);
             Point y2 = curve.PlusPoint(message, curve.MultiplyPoint(publicKey.point, r_Multiply));
             return new CipherPoint(y1, y2); ;
         }
@@ -79,7 +76,7 @@ namespace Demo
 
             for (int i = 0; i < cipherPoints.Length; i++)
             {
-                pointEncode[i] = ECCDecoding(cipherPoints[i]);
+                pointEncode[i] = ECCDecoding(cipherPoints[i], privateKey);
 
             }
 
@@ -92,7 +89,7 @@ namespace Demo
             return plainText;
         }
 
-        public Point ECCDecoding(CipherPoint encodeMessage)
+        public Point ECCDecoding(CipherPoint encodeMessage, PrivateKey privateKey)
         {
             Point result = curve.PlusPoint(encodeMessage.point2, curve.NegativePoint(curve.MultiplyPoint(encodeMessage.point1, privateKey.KeyValue)));
             return result;

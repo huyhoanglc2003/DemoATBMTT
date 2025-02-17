@@ -29,15 +29,13 @@ namespace Demo
         public static Point GenerateCurveCoefficient(EllipticCurve curve)
         {
             int a = GeneratePrimeNumber(1, curve.p-1);
-            int b = 2;
-            while (b < curve.p)
+            Random random = new Random();
+            int b = random.Next();
+            while (!curve.IsEllipticCurveCoefficient(a, b))
             {
-                if (curve.IsEllipticCurveCoefficient(a,b))
-                {
-                    return new Point(a, b);
-                } 
+                b = random.Next();
             }
-            return new Point(0, 0);
+            return new Point(a, b);
         }
 
         public static int GeneratePrimeNumber(int min, int max)

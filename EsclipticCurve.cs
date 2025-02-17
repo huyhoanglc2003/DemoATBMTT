@@ -142,7 +142,6 @@ namespace Demo
             int xr = MathUtil.Modulus((Convert.ToInt64(Math.Pow(phi, 2)) - 2 * pointP.x), p);
             int yr = MathUtil.Modulus((phi * (pointP.x - xr) - pointP.y), Convert.ToInt64(p));
             return new Point(xr, yr);
-
         }
 
         /// <summary>
@@ -177,33 +176,6 @@ namespace Demo
         /// <returns></returns>
         public Point NegativePoint(Point point) {
             return new Point(point.x, MathUtil.Modulus(-point.y, p)) ;
-        }
-    }
-
-
-    /// <summary>
-    /// Điểm trong hệ tọa độ (x,y)
-    /// </summary>
-    public class Point
-    {
-        public int x { get; set; }
-        public int y { get; set; }
-
-        public Point()
-        {
-            x = 1;
-            y = 1;
-        }
-
-        public Point(int x, int y)
-        {
-            this.x = x;
-            this.y = y;
-        }
-
-        public override string ToString()
-        {
-            return "("+x+","+y+")";
         }
     }
 }
