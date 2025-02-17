@@ -103,6 +103,7 @@ namespace Demo
             return false;
 
         }
+
         public int GetYByX(int x)
         {
             return (int) Math.Sqrt(MathUtil.Modulus(Convert.ToInt64((Math.Pow(x, 3) + a * x + b)), p));

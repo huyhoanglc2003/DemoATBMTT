@@ -68,7 +68,7 @@ namespace Demo
 
     public class PublicMessage
     {
-        public string Message { get; set; }
+        public string Message { get; }
         public int a { get; }
         public int b { get; }
         public int p { get; }

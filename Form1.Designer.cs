@@ -29,67 +29,194 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.InputPlaintext = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Ciphertext = new System.Windows.Forms.TextBox();
+            this.EncodeBtn = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.ReadPlaintextBtn = new System.Windows.Forms.Button();
+            this.TransferBtn = new System.Windows.Forms.Button();
+            this.SaveCiphertextBtn = new System.Windows.Forms.Button();
+            this.InputCiphertext = new System.Windows.Forms.TextBox();
+            this.Plaintext = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.ReadCiphertextBtn = new System.Windows.Forms.Button();
+            this.DecodeBtn = new System.Windows.Forms.Button();
+            this.SavePlaintextBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(131, 70);
+            this.label1.Location = new System.Drawing.Point(34, 70);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.Size = new System.Drawing.Size(46, 16);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "Bản rõ";
+
             // 
-            // textBox1
+            // InputPlaintext
             // 
-            this.textBox1.Location = new System.Drawing.Point(237, 64);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(111, 22);
-            this.textBox1.TabIndex = 1;
+            this.InputPlaintext.Location = new System.Drawing.Point(102, 70);
+            this.InputPlaintext.Name = "InputPlaintext";
+            this.InputPlaintext.Size = new System.Drawing.Size(132, 22);
+            this.InputPlaintext.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(131, 134);
+            this.label2.Location = new System.Drawing.Point(34, 219);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 16);
+            this.label2.Size = new System.Drawing.Size(53, 16);
             this.label2.TabIndex = 2;
-            this.label2.Text = "label2";
+            this.label2.Text = "Bản mã";
             // 
-            // textBox2
+            // Ciphertext
             // 
-            this.textBox2.Location = new System.Drawing.Point(237, 134);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(111, 22);
-            this.textBox2.TabIndex = 3;
+            this.Ciphertext.Location = new System.Drawing.Point(102, 219);
+            this.Ciphertext.Name = "Ciphertext";
+            this.Ciphertext.Size = new System.Drawing.Size(132, 22);
+            this.Ciphertext.TabIndex = 3;
             // 
-            // button1
+            // EncodeBtn
             // 
-            this.button1.Location = new System.Drawing.Point(169, 285);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 28);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.EncodeBtn.Location = new System.Drawing.Point(102, 122);
+            this.EncodeBtn.Name = "EncodeBtn";
+            this.EncodeBtn.Size = new System.Drawing.Size(92, 28);
+            this.EncodeBtn.TabIndex = 4;
+            this.EncodeBtn.Text = "Mã hóa";
+            this.EncodeBtn.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(27, 19);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(59, 16);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "MÃ HÓA";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(416, 19);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(55, 16);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "GIẢI MÃ";
+            // 
+            // ReadPlaintextBtn
+            // 
+            this.ReadPlaintextBtn.Location = new System.Drawing.Point(258, 67);
+            this.ReadPlaintextBtn.Name = "ReadPlaintextBtn";
+            this.ReadPlaintextBtn.Size = new System.Drawing.Size(92, 28);
+            this.ReadPlaintextBtn.TabIndex = 7;
+            this.ReadPlaintextBtn.Text = "File";
+            this.ReadPlaintextBtn.UseVisualStyleBackColor = true;
+            // 
+            // TransferBtn
+            // 
+            this.TransferBtn.Location = new System.Drawing.Point(258, 219);
+            this.TransferBtn.Name = "TransferBtn";
+            this.TransferBtn.Size = new System.Drawing.Size(92, 28);
+            this.TransferBtn.TabIndex = 8;
+            this.TransferBtn.Text = "Chuyển";
+            this.TransferBtn.UseVisualStyleBackColor = true;
+            // 
+            // SaveCiphertextBtn
+            // 
+            this.SaveCiphertextBtn.Location = new System.Drawing.Point(259, 271);
+            this.SaveCiphertextBtn.Name = "SaveCiphertextBtn";
+            this.SaveCiphertextBtn.Size = new System.Drawing.Size(92, 28);
+            this.SaveCiphertextBtn.TabIndex = 9;
+            this.SaveCiphertextBtn.Text = "Lưu";
+            this.SaveCiphertextBtn.UseVisualStyleBackColor = true;
+            // 
+            // InputCiphertext
+            // 
+            this.InputCiphertext.Location = new System.Drawing.Point(498, 71);
+            this.InputCiphertext.Name = "InputCiphertext";
+            this.InputCiphertext.Size = new System.Drawing.Size(132, 22);
+            this.InputCiphertext.TabIndex = 10;
+            // 
+            // Plaintext
+            // 
+            this.Plaintext.Location = new System.Drawing.Point(498, 216);
+            this.Plaintext.Name = "Plaintext";
+            this.Plaintext.Size = new System.Drawing.Size(132, 22);
+            this.Plaintext.TabIndex = 11;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(416, 220);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(46, 16);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Bản rõ";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(416, 74);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(53, 16);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Bản mã";
+            // 
+            // ReadCiphertextBtn
+            // 
+            this.ReadCiphertextBtn.Location = new System.Drawing.Point(670, 68);
+            this.ReadCiphertextBtn.Name = "ReadCiphertextBtn";
+            this.ReadCiphertextBtn.Size = new System.Drawing.Size(92, 28);
+            this.ReadCiphertextBtn.TabIndex = 14;
+            this.ReadCiphertextBtn.Text = "File";
+            this.ReadCiphertextBtn.UseVisualStyleBackColor = true;
+            // 
+            // DecodeBtn
+            // 
+            this.DecodeBtn.Location = new System.Drawing.Point(498, 123);
+            this.DecodeBtn.Name = "DecodeBtn";
+            this.DecodeBtn.Size = new System.Drawing.Size(92, 28);
+            this.DecodeBtn.TabIndex = 15;
+            this.DecodeBtn.Text = "Giải mã";
+            this.DecodeBtn.UseVisualStyleBackColor = true;
+            // 
+            // SavePlaintextBtn
+            // 
+            this.SavePlaintextBtn.Location = new System.Drawing.Point(670, 214);
+            this.SavePlaintextBtn.Name = "SavePlaintextBtn";
+            this.SavePlaintextBtn.Size = new System.Drawing.Size(92, 28);
+            this.SavePlaintextBtn.TabIndex = 16;
+            this.SavePlaintextBtn.Text = "Lưu";
+            this.SavePlaintextBtn.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.SavePlaintextBtn);
+            this.Controls.Add(this.DecodeBtn);
+            this.Controls.Add(this.ReadCiphertextBtn);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.Plaintext);
+            this.Controls.Add(this.InputCiphertext);
+            this.Controls.Add(this.SaveCiphertextBtn);
+            this.Controls.Add(this.TransferBtn);
+            this.Controls.Add(this.ReadPlaintextBtn);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.EncodeBtn);
+            this.Controls.Add(this.Ciphertext);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.InputPlaintext);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -98,10 +225,22 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox InputPlaintext;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox Ciphertext;
+        private System.Windows.Forms.Button EncodeBtn;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button ReadPlaintextBtn;
+        private System.Windows.Forms.Button TransferBtn;
+        private System.Windows.Forms.Button SaveCiphertextBtn;
+        private System.Windows.Forms.TextBox InputCiphertext;
+        private System.Windows.Forms.TextBox Plaintext;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button ReadCiphertextBtn;
+        private System.Windows.Forms.Button DecodeBtn;
+        private System.Windows.Forms.Button SavePlaintextBtn;
     }
 }
 
