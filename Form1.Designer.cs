@@ -55,7 +55,6 @@
             this.label1.Size = new System.Drawing.Size(46, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bản rõ";
-
             // 
             // InputPlaintext
             // 
@@ -88,6 +87,7 @@
             this.EncodeBtn.TabIndex = 4;
             this.EncodeBtn.Text = "Mã hóa";
             this.EncodeBtn.UseVisualStyleBackColor = true;
+            this.EncodeBtn.Click += new System.EventHandler(this.EncodeBtn_Click);
             // 
             // label3
             // 
@@ -124,6 +124,7 @@
             this.TransferBtn.TabIndex = 8;
             this.TransferBtn.Text = "Chuyển";
             this.TransferBtn.UseVisualStyleBackColor = true;
+            this.TransferBtn.Click += new System.EventHandler(this.TransferBtn_Click);
             // 
             // SaveCiphertextBtn
             // 
@@ -183,6 +184,7 @@
             this.DecodeBtn.TabIndex = 15;
             this.DecodeBtn.Text = "Giải mã";
             this.DecodeBtn.UseVisualStyleBackColor = true;
+            this.DecodeBtn.Click += new System.EventHandler(this.DecodeBtn_Click);
             // 
             // SavePlaintextBtn
             // 
