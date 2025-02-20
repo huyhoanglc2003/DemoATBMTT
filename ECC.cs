@@ -39,23 +39,18 @@ namespace Demo
         /// <returns>cipherText: Bản mã</returns>
         public string ECCEncoding(string plainText)
         {
-            Console.WriteLine("=======================ENCODING==============================");
+            
             Point[] pointEncode = PointConverter.IntToPoint(PointConverter.StringToInt(StandardizeMessage(plainText)));
-            foreach (var item in pointEncode)
-            {
-                Console.WriteLine("Point" + item);
-            }
+
             CipherPoint[] cipherPoints = new CipherPoint[pointEncode.Length];
 
             for (int i = 0; i < pointEncode.Length; i++)
             {
                 cipherPoints[i] = ECCEncoding(pointEncode[i]);
             }
-            foreach (var item in cipherPoints)
-            {
-                Console.WriteLine("Cipherpoint"+item);
-            }
+
             string cipherText = PointConverter.IntToString(PointConverter.CipherToInt(cipherPoints));
+            
             return cipherText;
         }
 
@@ -68,27 +63,13 @@ namespace Demo
 
         public string ECCDecoding(string cipherText, PrivateKey privateKey)
         {
-            Console.WriteLine("=======================DECODING==============================");
             CipherPoint[] cipherPoints = PointConverter.IntToCipher(PointConverter.StringToInt(StandardizeMessage(cipherText)));
-
-            foreach (var item in cipherPoints)
-            {
-                Console.WriteLine("Cipherpoint" + item);
-            }
-
             Point[] pointEncode = new Point[cipherPoints.Length];
-
             for (int i = 0; i < cipherPoints.Length; i++)
             {
                 pointEncode[i] = ECCDecoding(cipherPoints[i], privateKey);
 
             }
-
-            foreach (var item in pointEncode)
-            {
-                Console.WriteLine("Point" + item);
-            }
-
             string plainText = PointConverter.IntToString(PointConverter.PointToInt(pointEncode));
             return plainText;
         }

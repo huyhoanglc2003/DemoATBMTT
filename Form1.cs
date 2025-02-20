@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -39,6 +40,90 @@ namespace Demo
         private void DecodeBtn_Click(object sender, EventArgs e)
         {
             Plaintext.Text = crypto.ECCDecoding(InputCiphertext.Text,privateKey);
+        }
+
+        private void ReadPlaintextBtn_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Text Files (*.txt)|*.txt";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    string fileContent = File.ReadAllText(openFileDialog.FileName);
+
+                    InputPlaintext.Text = fileContent;
+                }
+                catch (Exception ex) { 
+                
+                }
+            }
+        }
+
+        private void ReadCiphertextBtn_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Text Files (*.txt)|*.txt";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    string fileContent = File.ReadAllText(openFileDialog.FileName);
+
+                    InputCiphertext.Text = fileContent;
+                }
+                catch (Exception ex)
+                {
+
+                }
+            }
+        }
+
+
+        private void SavePlaintextBtn_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Text Files (*.txt)|*.txt";
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    string filePath = saveFileDialog.FileName;
+
+                    string fileContent = Plaintext.Text;
+
+                    File.WriteAllText(filePath, fileContent);
+                }
+                catch (Exception ex)
+                {
+
+                }
+            }
+        }
+
+        private void SaveCiphertextBtn_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Text Files (*.txt)|*.txt";
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    string filePath = saveFileDialog.FileName;
+
+                    string fileContent = Ciphertext.Text;
+
+                    File.WriteAllText(filePath, fileContent);
+                }
+                catch (Exception ex)
+                {
+
+                }
+            }
         }
     }
 }

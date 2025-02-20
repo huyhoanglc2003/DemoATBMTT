@@ -3,58 +3,58 @@
   "WorkspaceRootPath": "D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\generator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|solutionrelative:generator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|d:\\project demo\\other project\\atbm\\demoatbmtt\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\ecc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|solutionrelative:ecc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\esclipticcurve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|solutionrelative:esclipticcurve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\key.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|solutionrelative:key.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\mathutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|solutionrelative:mathutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\esclipticcurve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|solutionrelative:esclipticcurve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|d:\\project demo\\other project\\atbm\\demoatbmtt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|d:\\project demo\\other project\\atbm\\demoatbmtt\\generator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|solutionrelative:generator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\mathutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|solutionrelative:mathutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\point.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|solutionrelative:point.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|d:\\project demo\\other project\\atbm\\demoatbmtt\\pointconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\pointconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6710FE59-6B6E-48A2-AA24-6ED4F039F962}|Demo.csproj|solutionrelative:pointconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 1,
+      "Orientation": 0,
       "VerticalTabListWidth": 112,
       "DocumentGroups": [
         {
-          "DockedHeight": 286,
-          "SelectedChildIndex": 12,
+          "DockedWidth": 953,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,13 +70,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
+              "Title": "Generator.cs",
+              "DocumentMoniker": "D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\Generator.cs",
+              "RelativeDocumentMoniker": "Generator.cs",
+              "ToolTip": "D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\Generator.cs",
+              "RelativeToolTip": "Generator.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T08:47:49.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ECC.cs",
+              "DocumentMoniker": "D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\ECC.cs",
+              "RelativeDocumentMoniker": "ECC.cs",
+              "ToolTip": "D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\ECC.cs",
+              "RelativeToolTip": "ECC.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAowDMAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T08:48:48.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Form1.Designer.cs",
               "ToolTip": "D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\Form1.Designer.cs",
               "RelativeToolTip": "Form1.Designer.cs",
-              "ViewState": "AQIAAMwAAAAAAAAAAAAAADkAAAAAAAAA",
+              "ViewState": "AQIAAHsAAAAAAAAAAAAwwJMAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-17T23:20:20.931Z",
               "EditorCaption": ""
@@ -91,25 +117,11 @@
               "RelativeToolTip": "PointConverter.cs",
               "ViewState": "AQIAAEQAAAAAAAAAAAAiwEwAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T23:07:44.916Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T23:07:44.916Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ECC.cs",
-              "DocumentMoniker": "D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\ECC.cs",
-              "RelativeDocumentMoniker": "ECC.cs",
-              "ToolTip": "D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\ECC.cs",
-              "RelativeToolTip": "ECC.cs",
-              "ViewState": "AQIAAFkAAAAAAAAAAAAAABMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T08:48:48.665Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -117,21 +129,19 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T08:48:31.742Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-16T08:48:31.742Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "Point.cs",
               "DocumentMoniker": "D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\Point.cs",
               "RelativeDocumentMoniker": "Point.cs",
               "ToolTip": "D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\Point.cs",
               "RelativeToolTip": "Point.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBAAAAAAAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T12:57:30.43Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T12:57:30.43Z"
             },
             {
               "$type": "Document",
@@ -143,64 +153,50 @@
               "RelativeToolTip": "MathUtil.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T08:47:37.071Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-16T08:47:37.071Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "EsclipticCurve.cs",
               "DocumentMoniker": "D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\EsclipticCurve.cs",
               "RelativeDocumentMoniker": "EsclipticCurve.cs",
               "ToolTip": "D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\EsclipticCurve.cs",
               "RelativeToolTip": "EsclipticCurve.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAAAA4AAAAeAAAA",
+              "ViewState": "AQIAAIMAAAAAAAAAAAAAwKwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-16T08:48:45.548Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Key.cs",
               "DocumentMoniker": "D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\Key.cs",
               "RelativeDocumentMoniker": "Key.cs",
               "ToolTip": "D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\Key.cs",
               "RelativeToolTip": "Key.cs",
-              "ViewState": "AQIAAEQAAAAAAAAAAIAzwEYAAAAmAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-16T08:48:21.789Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Generator.cs",
-              "DocumentMoniker": "D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\Generator.cs",
-              "RelativeDocumentMoniker": "Generator.cs",
-              "ToolTip": "D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\Generator.cs",
-              "RelativeToolTip": "Generator.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAADgvxAAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T08:47:49.992Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAAACEAAABCAAAA",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAmwGUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-16T08:47:46.898Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\Project Demo\\Other Project\\ATBM\\DemoATBMTT\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -213,7 +209,7 @@
           ]
         },
         {
-          "DockedHeight": 114,
+          "DockedWidth": 36,
           "SelectedChildIndex": -1,
           "Children": [
             {
