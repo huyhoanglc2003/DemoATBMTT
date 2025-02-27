@@ -15,35 +15,21 @@ namespace Demo
     {
        
     }
-
-    public class CipherPoint
-    {
-        public Point point1 { get; }
-        public Point point2 { get; }
-
-        public CipherPoint(Point point1, Point point2)
-        {
-            this.point1 = point1;
-            this.point2 = point2;
-        }
-
-        public override string ToString()
-        {
-            return "("+point1.ToString()+";"+point2.ToString()+")";
-        }
-    }
-
-
     /// <summary>
     /// Khóa bí mật
     /// </summary>
     public class PrivateKey : Key
     {
-        public int KeyValue { get; set; }
+        public int KeyValue { get; }
 
         public PrivateKey(int value)
         {
             this.KeyValue = value;
+        }
+        public PrivateKey()
+        {
+            Random random = new Random();
+            this.KeyValue = random.Next();
         }
 
     }
@@ -81,6 +67,23 @@ namespace Demo
         public override string ToString()
         {
             return "{" + a + ";" + b + ";" + p + ";"+ Message +" }";
+        }
+    }
+
+
+
+    public class CipherPoint
+    {
+        public Point point1 { get; }
+        public Point point2 { get; }
+        public CipherPoint(Point point1, Point point2)
+        {
+            this.point1 = point1;
+            this.point2 = point2;
+        }
+        public override string ToString()
+        {
+            return "(" + point1.ToString() + ";" + point2.ToString() + ")";
         }
     }
 }

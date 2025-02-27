@@ -13,12 +13,10 @@ namespace Demo
 {
     public partial class Form1 : Form
     {
-        private static Random random = new Random();
-        private const int a = 1;
-        private const int b = 6;
+        private const int a = 0;
+        private const int b = 7;
         private static int p = 9973;
-
-        private static PrivateKey privateKey = new PrivateKey(random.Next());
+        private static PrivateKey privateKey = new PrivateKey();
 
         ECC crypto = new ECC(new EllipticCurve(a, b, p), privateKey);
 

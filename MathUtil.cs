@@ -158,24 +158,10 @@ namespace Demo
         /// <returns>result = a^-1 mod p</returns>
         public static int NegativeModulus(long a, long p)
         {
-            if (a == 0)
-            {
-                return 1;
-            }
-
-            long r0 = p;
-            long r1 = a;
-            long r2 = r0 % r1;
-
-            if (r2 == 0)
-            {
-                return 1;
-            }
-
+            long r0 = p, r1 = a, r2 = r0 % r1;
             long s0 = 1, s1 = 0;
             long t0 = 0, t1 = 1;
-            long q1 = r0 / r1;
-            long q0 = r1 / r2;
+            long q1 = r0 / r1, q0 = r1 / r2;
             long step = 0;
             do {
                 step++;
@@ -198,7 +184,6 @@ namespace Demo
                     }
                 }
             } while (r2 != 0);
-
             if (step % 2 == 0)
             {
                 t1 = t1 - t0 * q0;
@@ -209,5 +194,17 @@ namespace Demo
                 return Modulus(t0, p);
             }
         }
+
+
+        public static bool HasSquareRoot(int num, int p)
+        {
+            for (int y = 0; y < p; y++)
+            {
+                if ((y * y) % p == num) return true;
+            }
+            return false;
+        }
+
+
     }
 }

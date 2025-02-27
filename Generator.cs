@@ -17,25 +17,15 @@ namespace Demo
         public static Point GenerateCurveGPoint(EllipticCurve curve)
         {
             int x = GeneratePrimeNumber(2, curve.p-1);
-            return new Point(x, curve.GetYByX(x));
-        }
 
+            int y = curve.GetYByX(x);
 
-        public static Point GenerateCurveGPoint(int x, int y)
-        {
-            return new Point(x, y);
-        }
-
-        public static Point GenerateCurveCoefficient(EllipticCurve curve)
-        {
-            int a = GeneratePrimeNumber(1, curve.p-1);
-            Random random = new Random();
-            int b = random.Next();
-            while (!curve.IsEllipticCurveCoefficient(a, b))
+            if (y >= 0)
             {
-                b = random.Next();
+                return new Point(x, y);
             }
-            return new Point(a, b);
+
+            return new Point();
         }
 
         public static int GeneratePrimeNumber(int min, int max)
@@ -50,7 +40,7 @@ namespace Demo
             return n;
         }
 
-        public static int GeneratePrimePoint(int min, int max)
+        public static int GeneratePrimeX(int min, int max)
         {
             int[] primeValue = new int[max];
             int tmp = min;

@@ -72,15 +72,16 @@ namespace Demo
         {
             return PointToInt(CipherToPoint(data));
         }
+
         public static CipherPoint[] IntToCipher(int[] data)
         {
             return PointToCipher(IntToPoint(data));
         }
 
-        public static int[] StringToInt(string text)
+        public static int[] StringToInt(string data)
         {
 
-            byte[] utf32Bytes = Encoding.UTF32.GetBytes(text);
+            byte[] utf32Bytes = Encoding.UTF32.GetBytes(data);
 
             int[] result = new int[utf32Bytes.Length / 4];
 
@@ -97,6 +98,26 @@ namespace Demo
             byte[] utf32Bytes = data.SelectMany(u => BitConverter.GetBytes(u)).ToArray();
 
             return Encoding.UTF32.GetString(utf32Bytes);
+        }
+
+        public static Point[] StringToPoint(string data)
+        {
+            return IntToPoint(StringToInt(data));
+        }
+
+        public static CipherPoint[] StringToCipher(string data)
+        {
+            return IntToCipher(StringToInt(data));
+        }
+
+        public static string CipherToString(CipherPoint[] cipherPoints)
+        {
+            return IntToString(CipherToInt(cipherPoints));
+        }
+
+        public static string PointToString(Point[] pointEncode)
+        {
+            return IntToString(PointToInt(pointEncode));
         }
     }
 }

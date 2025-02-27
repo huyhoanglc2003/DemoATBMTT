@@ -19,49 +19,58 @@ namespace Demo
         private int b;
         public int p { get; set; }
 
-
-        public EllipticCurve()
-        {
-            Random random = new Random();
-            this.a = random.Next(256);
-            do
-            {
-                this.b = random.Next(256);
-            } while (!IsEllipticCurveCoefficient());
-
-            this.p = Generator.GeneratePrimeNumber(127,257);
-        }
-
-        public EllipticCurve(Point point, int p)
-        {
-            this.p = p;
-            if (IsEllipticCurveCoefficient()) // 4*a^3 +27b^2 !=0
-            {
-                this.a = point.x;
-                this.b = point.y;
-            }
-        }
-
         public EllipticCurve(int a, int b, int p)
         {
             this.p = p;
-            if (IsEllipticCurveCoefficient()) // 4*a^3 +27b^2 !=0
+            if (IsEllipticCurveCoefficient(a,b)) // 4*a^3 +27b^2 !=0
             {
-                
+                this.a = a;
+                this.b = b;
             }
-
-            this.a = a;
-            this.b = b;
         }
 
-        /// <summary>
-        /// Điều kiện của hệ số 
-        /// </summary>
-        /// <returns>4*a^3 +27b^2 !=0</returns>
-        private bool IsEllipticCurveCoefficient() {
-            return 4 * Math.Pow(a, 3) + 27 * Math.Pow(b, 2) != 0;
+        public List<Point> GetAllPoints()
+        {
+            List<Point> points = new List<Point>();
+            points.Add(new Point()); // Điểm vô cực (𝒪)
+
+            for (int x = 0; x < p; x++)
+            {
+                int rhs = MathUtil.Modulus(x * x * x + a * x + b, p);
+                for (int y = 0; y < p; y++)
+                {
+                    if (MathUtil.Modulus(y * y, p) == rhs)
+                    {
+                        points.Add(new Point(x,y));
+                    }
+                }
+            }
+            return points;
         }
 
+        public bool EstimatePointsByHasseTheorem(int n)
+        {
+            return (int)(p + 1 + 2 * Math.Sqrt(p)) < n && n < (int)(p + 1 + 2 * Math.Sqrt(p));
+        }
+
+
+        public int CountPointsOnCurve()
+        {
+            int count = 1; // Bắt đầu với điểm vô cực 𝒪
+            for (int x = 0; x < p; x++)
+            {
+                int rhs = MathUtil.Modulus(x * x * x + a * x + b, p); // Tính x^3 + ax + b mod p
+                if (MathUtil.HasSquareRoot(rhs, p))
+                {
+                    count += 2; // Có 2 giá trị y đối xứng (trừ khi y = 0)
+                }
+                else if (rhs == 0)
+                {
+                    count += 1; // Trường hợp đặc biệt khi y = 0
+                }
+            }
+            return count;
+        }
 
         /// <summary>
         /// Điều kiện của hệ số 
@@ -81,33 +90,14 @@ namespace Demo
         /// <returns></returns>
         public bool IsEllipticCurvePoint(Point point)
         {
-            if (Math.Pow(point.y, 2) == MathUtil.Modulus(Convert.ToInt64((Math.Pow(point.x, 3) + a * point.x + b)), p)) // y^2 = x^3 + ax + b mod p
-            {
-                return true;
-            }
-            return false;
-
-        }
-
-        /// <summary>
-        /// Hàm xác định điểm có thuộc đường cong Elliptic trong hệ tọa độ (x,y) hay không
-        /// </summary>
-        /// <param name="x"></param>
-        /// <param name="y"></param>
-        /// <returns></returns>
-        public bool IsEllipticCurvePoint(int x, int y)
-        {
-            if (Math.Pow(y, 2) == MathUtil.Modulus(Convert.ToInt64((Math.Pow(x, 3) + a * x + b)), p)) // y^2 = x^3 + ax + b mod p
-            {
-                return true;
-            }
-            return false;
-
+            return MathUtil.Modulus(point.y * point.y, p) == MathUtil.Modulus(point.x * point.x * point.x + a * point.x + b, p); // y^2 = x^3 + ax + b mod p
         }
 
         public int GetYByX(int x)
         {
-            return (int) Math.Sqrt(MathUtil.Modulus(Convert.ToInt64((Math.Pow(x, 3) + a * x + b)), p));
+            int fx = MathUtil.Modulus(x * x * x + a * x + b, p);
+            if (MathUtil.HasSquareRoot(fx, p)) return (int)Math.Sqrt(fx);
+            return -1;
         }
 
 
@@ -120,14 +110,18 @@ namespace Demo
         /// <returns>Điểm R(xr,yr) = P(xP,yP) + Q(xQ, yQ)</returns>
         public Point PlusPoint(Point pointP, Point pointQ)
         {
-            if (pointP.x == pointQ.x)
+            if (pointP == null || pointP.isInfinity) return pointQ;
+
+            if (pointQ == null || pointQ.isInfinity) return pointP;
+
+            if (pointP.Equals(pointQ))
             {
                 return DoublePoint(pointP);
             }
             else
             {
                 int phi = MathUtil.Modulus((pointQ.y - pointP.y) * MathUtil.NegativeModulus((pointQ.x - pointP.x), p), p); // (yQ - yP) / (xQ - xP) mod p 
-                int xr = MathUtil.Modulus(Convert.ToInt64(Math.Pow(phi, 2) - pointP.x - pointQ.x), p);
+                int xr = MathUtil.Modulus(Convert.ToInt64(phi * phi - pointP.x - pointQ.x), p);
                 int yr = MathUtil.Modulus((phi * (pointP.x - xr) - pointP.y), p);
                 return new Point(xr, yr);
             }
@@ -160,7 +154,6 @@ namespace Demo
             Point result = point;
             int i = 1;
             while (i < bitArray.Length) {
-/*               Console.WriteLine("Step:" + i + " = " + bitArray[i]);*/
                 result = DoublePoint(result);
                 if (bitArray[i]) {
                     result = PlusPoint(result, point);
@@ -172,7 +165,7 @@ namespace Demo
         }
 
         /// <summary>
-        /// 
+        /// Hàm trả về một điểm thế hiện cho phép trừ trong đường cong Elliptic
         /// </summary>
         /// <param name="point"></param>
         /// <returns></returns>
